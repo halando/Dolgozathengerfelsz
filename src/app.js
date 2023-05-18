@@ -18,10 +18,12 @@ window.addEventListener('load', () => {
 });
 
 function init() {
+    if(doc.calcButton){
     doc.badinputDiv.style.display = 'none';
     doc.calcButton.addEventListener('click', () => {
         startCalc();
     });
+ }
 }
 
 function startCalc() {
